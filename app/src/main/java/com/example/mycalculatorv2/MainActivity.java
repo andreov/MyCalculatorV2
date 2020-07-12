@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClearClick(View view){
         mResult.setText("");
     }
+
     public void onResultClick(View view) {
         Button button = (Button) view;
         mResult.append(button.getText());
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         switch(op) {
             case "+":
                 result = num1 + num2;
-                mResult.setText("");
+                //mResult.setText("");
                 mResult.append(Double.toString(result));
                 break;
             case "-":
